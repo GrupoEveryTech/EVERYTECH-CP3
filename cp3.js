@@ -1,9 +1,23 @@
-function validarSenha() {
-    var senha = document.getElementById("senha").value;
+// validação dos usuario 
 
-    if (senha.length >= 8) {
-        console.log("Senha válida!");
-    } else {
-        console.log("A senha deve ter pelo menos 8 caracteres.");
+let listaDeUsuarios = [
+
+    { 
+
+        nome: "renato",
+        segundonome: "atanes",
+        email:"rm552029",
+        senha:"123456",
+        confirmacaosenha:"123456"
+        
+
+     
     }
-}
+];
+
+localStorage.setItem("listaUser" ,JSON.stringify(listaDeUsuarios));
+
+
+
+
+
