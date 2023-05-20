@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,50 +14,72 @@
 
 <body>
   
-<form action="index.html" method="get" onsubmit="return true ">
-  <fieldset>
+<form action="index.html" method="get" onsubmit="return true" id="formulario">
+
+      
     <legend>Informe seus dados </legend>
     <div>
 
       <label for="idNm">Nome</label>
-                          <input type="text" name="txtNm" id="idNm" placeholder="Primeiro Nome" maxlength="5">
+      <input type="text" name="txtNm" id="idNm" placeholder="Primeiro Nome" maxlength="5">
     </div>
    
     <div>
       <label for="idsNm">Segundo Nome</label>
-                          <input type="text" name="txtsecNm" id="idNm" placeholder="Segundo Nome" maxlength="5" >
+      <input type="text" name="txtsecNm" id="idNm" placeholder="Segundo Nome" maxlength="5" >
     </div>
   
-    <div>
-      <label for="idEmail">Email</label>
-                          <input type="email" name="txtEmail" id="idEmail" placeholder="Email" maxlength="">
-    </div>
+
   
   
-    <div>
-      <label for="idSenha">Senha</label>
-                          <input type="password" name="txtSenha" id="idsenha" placeholder="Senha" minlength="6" maxlength="8">
-    </div>
+    
+    
+      <label for="primeiroNome">Primeiro Nome:</label>
+      <input type="text" id="primeiroNome" name="primeiroNome" required>
+        
+        <br>
+        
+      <label for="segundoNome">Segundo Nome:</label>
+      <input type="text" id="segundoNome" name="segundoNome" required>
+        
+        <br>
+        
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
       
-    <div>
-      <label for="idSenha">Corfirme a senha</label>
-      <input oninput="validarSenha(this)" type="password" name="txtConfirmSenha" id="idconfirmsenha" placeholder="Confirme a Senha" minlength="6" maxlength="8">
-    </div>
-   
-    <div>
-
-      <input type="submit" value=" Entrar">
-      <input type="reset" value="Limpar">
-    </div>
-  
-  
-  </fieldset>
-  
-</form>
-
-</div>
-
-
-  
+      <div>
+        <label for="idEmail">Email</label>
+        <input type="email" name="txtEmail" id="idEmail" placeholder="Email" maxlength="">
+      </div>
+        
+        <br>
+        
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+      
+      
+      
+      <div>
+        <label for="idSenha">Senha</label>
+        <input type="password" name="txtSenha" id="idsenha" placeholder="Senha" minlength="6" maxlength="8">
+      </div>
+      
+      
+      <div>
+        <label for="idSenha">Corfirme a senha</label>
+        <input oninput="validarSenha(this)" type="password" name="txtConfirmSenha" id="idconfirmsenha" placeholder="Confirme a Senha" minlength="6" maxlength="8">
+      </div>
+      
+      
+        
+        <br>
+        
+      <label for="confirmarSenha">Confirmação Senha:</label>
+      <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+        
+        <br>
+        
+      <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
