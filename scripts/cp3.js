@@ -1,6 +1,8 @@
 var formulario = document.getElementById("formulario");
 formulario.addEventListener("submit", function(event) {
-    event.preventDefault(); 
+
+    event.preventDefault(); // Impede o envio do formulário
+
     
     var primeiroNome = document.getElementById("primeiroNome").value;
     var segundoNome = document.getElementById("segundoNome").value;
@@ -8,31 +10,36 @@ formulario.addEventListener("submit", function(event) {
     var senha = document.getElementById("senha").value;
     var confirmarSenha = document.getElementById("confirmarSenha").value;
     
-    if (primeiroNome === "") {
+
+    if (primeiroNome.trim() === "") {
         alert("Por favor, informe o Primeiro Nome.");
         return;
     }
     
-    if (segundoNome === "") {
+
+    if (segundoNome.trim() === "") {
         alert("Por favor, informe o Segundo Nome.");
         return;
     }
-    
-    if (email === "") {
+
+    if (email.trim() === "") {
+
         alert("Por favor, informe o Email.");
         return;
     }
-    
-    if (senha === "") {
+
+    if (senha.trim() === "") {
         alert("Por favor, informe a Senha.");
         return;
     }
-
+    
     if (senha.length < 8) {
-        alert("A Senha deve ter pelo menos 8 caracteres.");
+        alert("A senha deve ter pelo menos 8 caracteres.");
+        return;
     }
     
-    if (confirmarSenha === "") {
+    if (confirmarSenha.trim() === "") {
+
         alert("Por favor, informe a Confirmação de Senha.");
         return;
     }
@@ -41,5 +48,11 @@ formulario.addEventListener("submit", function(event) {
         alert("A Senha e a Confirmação de Senha não correspondem.");
         return;
     }
+
+    
+    // Se todas as validações passaram, o formulário é válido
     alert("Formulário válido. Dados enviados com sucesso!");
+    
+    // Aqui você pode adicionar a lógica para enviar os dados para um servidor, etc.
+
 });
