@@ -19,30 +19,30 @@
     <div>
 
       <label for="idNm">Nome</label>
-                          <input type="text" name="txtNm" id="idNm" placeholder="Primeiro Nome">
+                          <input type="text" name="txtNm" id="idNm" placeholder="Primeiro Nome" maxlength="5">
     </div>
    
     <div>
-      <label for="idNm">Segundo Nome</label>
-                          <input type="text" name="txtsecNm" id="idNm" placeholder="Segundo Nome" >
+      <label for="idsNm">Segundo Nome</label>
+                          <input type="text" name="txtsecNm" id="idNm" placeholder="Segundo Nome" maxlength="5" >
     </div>
   
     <div>
       <label for="idEmail">Email</label>
-                          <input type="email" name="txtEmail" id="idEmail" placeholder="Email" >
+                          <input type="email" name="txtEmail" id="idEmail" placeholder="Email" maxlength="">
     </div>
   
   
     <div>
       <label for="idSenha">Senha</label>
-                          <input type="password" name="txtSenha" id="idsenha" placeholder="Senha" >
+                          <input type="password" name="txtSenha" id="idsenha" placeholder="Senha" minlength="6" maxlength="8">
     </div>
       
     <div>
       <label for="idSenha">Corfirme a senha</label>
-      <input type="password" name="txtConfirmSenha" id="idconfirmsenha" placeholder="Confirme a Senha" >
+      <input oninput="validarSenha(this)" type="password" name="txtConfirmSenha" id="idconfirmsenha" placeholder="Confirme a Senha" minlength="6" maxlength="8">
     </div>
-
+   
     <div>
 
       <input type="submit" value=" Entrar">
