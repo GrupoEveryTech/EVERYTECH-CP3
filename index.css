@@ -60,7 +60,6 @@ form{
 }
 
 form .input-field:first-child{
-    margin-bottom: 1.5rem;
     margin-top: 0.5rem;
 }
 
@@ -77,10 +76,6 @@ input{
     font-size: 0.7rem;
     color: rgba(0, 0, 0, 0.7);
 }
-
-input:-webkit-autofill {
-    font-size: 0.7rem;
-  }
 
 .input-field .underline::before{
     content: '';
@@ -110,6 +105,7 @@ input:-webkit-autofill {
 
 .input-field input::placeholder{
     color: rgba(0, 0, 0, 0.5);
+    font-size: 0.5rem;
 }
 
 form input[type="submit"]{
@@ -127,4 +123,49 @@ form input[type="submit"]{
 form input[type="submit"]:hover{
     letter-spacing: 0.5px;
     background: linear-gradient(to right, #c22ed0, #5ffae0);
+}
+
+div label{
+    padding-bottom: 0.5rem
+}
+
+label{
+    font-size: 0.7rem;
+}
+
+/* BREAKPOINT IPHONE SE */
+
+@media(max-width:375px){
+    main.container{
+        background: white;
+        width: 60vw;
+        max-height: auto;
+        padding: 2rem;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
+}
+
+/* BREAKPOINT IPHONE XR */
+@media(max-width:414px){
+    main.container{
+        background: white;
+        width: 70vw;
+        max-height: auto;
+        padding: 2rem;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
+}
+
+/* BREAKPOINT IPHONE 12 */
+@media(max-width:390px){
+    main.container{
+        background: white;
+        width: 75vw;
+        max-height: auto;
+        padding: 2rem;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
 }

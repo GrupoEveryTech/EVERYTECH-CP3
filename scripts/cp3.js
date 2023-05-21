@@ -56,3 +56,5 @@ formulario.addEventListener("submit", function(event) {
     // Aqui você pode adicionar a lógica para enviar os dados para um servidor, etc.
 
 });
+
+
