@@ -17,6 +17,17 @@ let listaDeUsuarios = [
 
 localStorage.setItem("listaUser" ,JSON.stringify(listaDeUsuarios));
 
+const toggleDarkModeInput = document.getElementById('toggleDarkMode');
+const body = document.body;
+
+toggleDarkModeInput.addEventListener('change', function() {
+  if (toggleDarkModeInput.checked) {
+    body.classList.add('dark-mode');
+  } else {
+    body.classList.remove('dark-mode');
+  }
+});
+
 
 
 
