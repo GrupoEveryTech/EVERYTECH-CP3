@@ -5,81 +5,53 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/index.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <script src="./cp3.js" defer></script>
-  <title>ENTRAR</title>
+  <title>Cadastro</title>
 </head>
 
 
 <body>
   
-<form action="index.html" method="get" onsubmit="return true" id="formulario">
+<main class="container">
+  <h2>Cadastro</h2>
+  <form action="index.html" method="get" onsubmit="return true" id="formulario">
 
-      
-    <legend>Informe seus dados </legend>
-    <div>
-
-      <label for="idNm">Nome</label>
-      <input type="text" name="txtNm" id="idNm" placeholder="Primeiro Nome" maxlength="5">
-    </div>
-   
-    <div>
-      <label for="idsNm">Segundo Nome</label>
-      <input type="text" name="txtsecNm" id="idNm" placeholder="Segundo Nome" maxlength="5" >
-    </div>
-  
-
-  
-  
-    
-    
+    <div class="input-field">
       <label for="primeiroNome">Primeiro Nome:</label>
-      <input type="text" id="primeiroNome" name="primeiroNome" required>
-        
-        <br>
-        
+      <input type="text" id="primeiroNome" name="primeiroNome" required placeholder="Digite seu primeiro nome...">
+      <div class="underline"></div>
+    </div>
+       
+    <div class="input-field">
       <label for="segundoNome">Segundo Nome:</label>
       <input type="text" id="segundoNome" name="segundoNome" required>
-        
-        <br>
-        
+      <div class="underline"></div>
+    </div>
+     
+    <div class="input-field">
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
-      
-      <div>
-        <label for="idEmail">Email</label>
-        <input type="email" name="txtEmail" id="idEmail" placeholder="Email" maxlength="">
-      </div>
+      <div class="underline"></div>
+    </div>
         
-        <br>
-        
+    <div class="input-field">  
       <label for="senha">Senha:</label>
       <input type="password" id="senha" name="senha" required>
+      <div class="underline"></div>
+    </div>
       
-      
-      
-      <div>
-        <label for="idSenha">Senha</label>
-        <input type="password" name="txtSenha" id="idsenha" placeholder="Senha" minlength="6" maxlength="8">
-      </div>
-      
-      
-      <div>
-        <label for="idSenha">Corfirme a senha</label>
-        <input oninput="validarSenha(this)" type="password" name="txtConfirmSenha" id="idconfirmsenha" placeholder="Confirme a Senha" minlength="6" maxlength="8">
-      </div>
-      
-      
-        
-        <br>
-        
+    <div class="input-field">
       <label for="confirmarSenha">Confirmação Senha:</label>
-      <input type="password" id="confirmarSenha" name="confirmarSenha" required>
-        
-        <br>
+      <input type="password" id="confirmarSenha" name="confirmarSenha" required minlength="6" maxlength="8">
+      <div class="underline"></div>
+    </div>
         
       <input type="submit" value="Enviar">
     </form>
+</main>
 </body>
 </html>
