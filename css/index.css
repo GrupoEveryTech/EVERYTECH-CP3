@@ -180,18 +180,6 @@ label{
 @media(max-width:414px){
     main.container{
         background: white;
-        width: 70vw;
-        max-height: auto;
-        padding: 2rem;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-        border-radius: 8px;
-    }
-}
-
-/* BREAKPOINT IPHONE 12 */
-@media(max-width:390px){
-    main.container{
-        background: white;
         width: 75vw;
         max-height: auto;
         padding: 2rem;
@@ -200,11 +188,11 @@ label{
     }
 }
 
-/* BREAKPOINT ANDROID */
-@media(max-width:425){
+/* BREAKPOINT IPAD*/
+@media(max-width:820px){
     main.container{
         background: white;
-        width: 65vw;
+        width: 70vw;
         max-height: auto;
         padding: 2rem;
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
