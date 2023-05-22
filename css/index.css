@@ -13,6 +13,8 @@ html{
 }
 
 body{
+    width: 100%;
+    height: 100%;
     background: linear-gradient(45deg, #9600ff, #AEBAF8);
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -24,7 +26,7 @@ body{
     justify-content: center;
 }
 
-body .dark-mode{
+.dark-mode{
     background: linear-gradient(180deg, #634835 0, #624230 10%, #603b2b 20%, #5f3227 30%, #5c2923 40%, #591f1f 50%, #55131d 60%, #52051c 70%, #4e001c 80%, #49001e 90%, #440020 100%);;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -36,8 +38,7 @@ body .dark-mode{
 
 main.container{
     background: white;
-    width: 35vw;
-    max-height: auto;
+    width: 60vw;
     padding: 2rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
@@ -45,7 +46,7 @@ main.container{
 
 main h2{
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     position: relative;
 }
 
@@ -53,7 +54,7 @@ main h2{
     content: '';
     position: absolute;
     height: 3px;
-    width: 25px;
+    width: 50px;
     bottom: 0px;
     left: 0;
     border-radius: 8px;
@@ -86,7 +87,7 @@ input{
 
 .input-field input{
     outline: none;
-    font-size: 0.7rem;
+    font-size: 2rem;
     color: rgba(0, 0, 0, 0.7);
 }
 
@@ -118,7 +119,7 @@ input{
 
 .input-field input::placeholder{
     color: rgba(0, 0, 0, 0.5);
-    font-size: 0.5rem;
+    font-size: 1.5rem;
 }
 
 form input[type="submit"]{
@@ -127,7 +128,7 @@ form input[type="submit"]{
     background: linear-gradient(to left, #c22ed0, #5ffae0);
     cursor: pointer;
     color: white;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     font-weight: 300;
     border-radius: 4px;
     transition: all 0.3s ease;
@@ -139,7 +140,7 @@ form input[type="submit"].dark-mode{
     background: linear-gradient(to left, #634835, #440020);
     cursor: pointer;
     color: white;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     font-weight: 300;
     border-radius: 4px;
     transition: all 0.3s ease;
@@ -160,7 +161,7 @@ div label{
 }
 
 label{
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
 
 /* BREAKPOINT IPHONE SE */
